@@ -10,7 +10,11 @@
 **Note:** Responses will be provided in JSON by POSTing to the URL https://www.toontownrewritten.com/api/login?format=json
 
 ## Calling the API
-All calls to the Login API should be made via a POST to the full TTR API endpoint (www and https will be added via a redirect if they are not present). The API responds with a set of key value pairs. All keys and values will be strings.
+All calls to the Login API should be made via a POST to the full TTR API endpoint (www and https will be added via a redirect if they are not present). Be sure to include the proper headers in your request:
+```
+"Content-type": "application/x-www-form-urlencoded"
+```
+The API responds with a set of key value pairs. All keys and values will be strings.
 
 ## Detailed Overview
 Launcher begins by collecting a username and password from the user.
