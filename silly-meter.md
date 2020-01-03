@@ -15,7 +15,8 @@ An HTTP GET to the Silly Meter API endpoint, https://www.toontownrewritten.com/a
 |-------------|---------|
 | state       | The current state of the Silly Meter. Valid options are `Active` (currently accumulating Silly Particles), `Reward` (currently providing rewards to all of Toontown), or `Inactive` (currently cooling down).|
 | hp          | The current HP of the Silly Meter. Silly Meter HP ranges from 0 to 5,000,000. |
-| rewards     | A list of three strings, which are the current Silly Teams that players are eligible to join. |
+| rewards     | A list of three strings, which are the current Silly Teams that players are eligible to join. These are re-rolled every time the silly meter exits the `Reward` state. |
+| winner      | The winning Silly Team whose reward is currently active. This field will be `null` when the `state` is set to `Reward`. |
 | nextUpdateTimestamp | The epoch timestamp in seconds of when the Silly Meter will next update itself. In the `Active` state, this means the next time that Silly Points will be calculated and added in to the current HP. In the `Reward` state, this timestamp will indicate when the rewards end. In the `Inactive` state, this timestamp will indicate when the Silly Meter will re-enter the `Active` state. |
 | asOf | The epoch timestamp at which the Silly Meter server generated this data. Multiple layers of caching are used in the implementation, so this timestamp is provided by the Silly Meter Gameserver itself. |
 | error | (optional) Present iff the web server has no cached response to serve. |
