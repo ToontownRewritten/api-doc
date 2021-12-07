@@ -15,7 +15,7 @@ An HTTP GET to the Field Office API endpoint, https://www.toontownrewritten.com/
 | Name        | Details |
 |-------------|---------|
 | lastUpdated | The epoch timestamp of when the web layer last queried for data. |
-| invasions   | A dictionary of Zone IDs (4-digit integers) to Field Office data. |
+| fieldOffices   | A dictionary of Zone IDs (4-digit integers) to Field Office data. |
 
 ## Field Office Data
 
