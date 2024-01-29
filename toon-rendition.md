@@ -2,7 +2,7 @@
 
 ## Overview
 
-This API provides a screenshot of your a toon generated from a DNA string.
+This API generates a screenshot of a toon based on a DNA string.
 
 ## Requests
 
