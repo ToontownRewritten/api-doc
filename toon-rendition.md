@@ -26,66 +26,66 @@ Example: https://rendition.toontownrewritten.com/render/7424010101021d021d8b1b16
 
 ## DNA Data
 
-The DNA string is in hexadecimals.
+The DNA string is in hexadecimals, and is 33 Hexadecimals long.
 
-Hexadecmal 1: DNA Type (74 is Toon)
+Hexadecimal 1: DNA Type (74 is Toon)
 
-Hexadecmal 2: Head Type/Species (Between 00-29)
+Hexadecimal 2: Head Type/Species (Between 00-29)
 
-Hexadecmal 3: Torso Type (Between 00-02)
+Hexadecimal 3: Torso Type (Between 00-02)
 
-Hexadecmal 4: Legs Type (Between 00-02)
+Hexadecimal 4: Legs Type (Between 00-02)
 
-Hexadecmal 5: Eyelashes (01 = None, 00 = Yes)
+Hexadecimal 5: Eyelashes (01 = None, 00 = Yes)
 
-Hexadecmal 6: Shirt Style/Texture: (Between 00-9f, ex. 0a, 2d, 68, 99, 00, 0f, 27)
+Hexadecimal 6: Shirt Style/Texture: (Between 00-9f, ex. 0a, 2d, 68, 99, 00, 0f, 27)
 
-Hexadecmal 7: Shirt Color: (Between 00-2d, (1b is default), NOTE: No bigger than 29 (ex. 30, 99, 58))
+Hexadecimal 7: Shirt Color: (Between 00-2d, (1b is default), NOTE: No bigger than 29 (ex. 30, 99, 58))
 
-Hexadecmal 8: Sleeves Style-Texture: (Between 00-cc, ex. 0a, 2d, 68, 99, 00, 0f, 27, aa, af, bd, ca)
+Hexadecimal 8: Sleeves Style-Texture: (Between 00-cc, ex. 0a, 2d, 68, 99, 00, 0f, 27, aa, af, bd, ca)
 
-Hexadecmal 9: Sleeves Color: (Between 00-2d, (1b is default), NOTE: No bigger than 29 (ex. 30, 99, 58))
+Hexadecimal 9: Sleeves Color: (Between 00-2d, (1b is default), NOTE: No bigger than 29 (ex. 30, 99, 58))
 
-Hexadecmal 10: Shorts/Skirt Texture: (Between 00-bb, ex. 0a, 2d, 68, 99, 00, 0f, 27, aa, af, 8d, 5e)
+Hexadecimal 10: Shorts/Skirt Texture: (Between 00-bb, ex. 0a, 2d, 68, 99, 00, 0f, 27, aa, af, 8d, 5e)
 
-Hexadecmal 11: Shorts/Skirt Color: (Between 00-2d, (1b is default), NOTE: No bigger than 29 (ex. 30, 99, 58))
+Hexadecimal 11: Shorts/Skirt Color: (Between 00-2d, (1b is default), NOTE: No bigger than 29 (ex. 30, 99, 58))
 
-Hexadecmal 12: Torso Color: (Between 00-2a, NOTE: No bigger than 29 (ex. 30, 99, 58))
+Hexadecimal 12: Torso Color: (Between 00-2a, NOTE: No bigger than 29 (ex. 30, 99, 58))
 
-Hexadecmal 13: Glove Color: (Between 00-2a, NOTE: No bigger than 29 (ex. 30, 99, 58))
+Hexadecimal 13: Glove Color: (Between 00-2a, NOTE: No bigger than 29 (ex. 30, 99, 58))
 
-Hexadecmal 14: Legs Color: (Between 00-2a, NOTE: No bigger than 29 (ex. 30, 99, 58))
+Hexadecimal 14: Legs Color: (Between 00-2a, NOTE: No bigger than 29 (ex. 30, 99, 58))
 
-Hexadecmal 15: Head Color: (Between 00-2a, NOTE: No bigger than 29 (ex. 30, 99, 58))
+Hexadecimal 15: Head Color: (Between 00-2a, NOTE: No bigger than 29 (ex. 30, 99, 58))
 
-Hexadecmal 16: Shoes Item ID
+Hexadecimal 16: Shoes Item ID
 
-Hexadecmal 17: Shoes Texture ID
+Hexadecimal 17: Shoes Texture ID
 
-Hexadecmal 18: Shoes Color ID
+Hexadecimal 18: Shoes Color ID
 
-Hexadecmal 19: Hat Item ID (Between 00-2a, NOTE: No bigger than 41 (ex. 42, 53, 70))
+Hexadecimal 19: Hat Item ID (Between 00-2a, NOTE: No bigger than 41 (ex. 42, 53, 70))
 
-Hexadecmal 20: Hat Texture ID (Between 00-5b, NOTE: No bigger than 59 (ex. 60, 74, 83))
+Hexadecimal 20: Hat Texture ID (Between 00-5b, NOTE: No bigger than 59 (ex. 60, 74, 83))
 
-Hexadecmal 21: Hat Color ID
+Hexadecimal 21: Hat Color ID
 
-Hexadecmal 22: Glasses Item ID (Between 00-1a, NOTE: No bigger than 15 (ex. 16, 19, 68))
+Hexadecimal 22: Glasses Item ID (Between 00-1a, NOTE: No bigger than 15 (ex. 16, 19, 68))
 
-Hexadecmal 23: Glasses Texture ID (Between 00-2f, NOTE: No bigger than 30 (ex. 31, 46, 72))
+Hexadecimal 23: Glasses Texture ID (Between 00-2f, NOTE: No bigger than 30 (ex. 31, 46, 72))
 
-Hexadecmal 24: Glasses Color ID
+Hexadecimal 24: Glasses Color ID
 
-Hexadecmal 25: Neckwear Item ID (Between 00-03)
+Hexadecimal 25: Neckwear Item ID (Between 00-03)
 
-Hexadecmal 26: Neckwear Texture ID (Between 00-4d, NOTE: No bigger than 49 (ex. 50, 67, 84))
+Hexadecimal 26: Neckwear Texture ID (Between 00-4d, NOTE: No bigger than 49 (ex. 50, 67, 84))
 
-Hexadecmal 27: Neckwear Color ID
+Hexadecimal 27: Neckwear Color ID
 
-Hexadecmal 28: Backpack Item ID (Between 00-22, NOTE: Can use 0a-1f)
+Hexadecimal 28: Backpack Item ID (Between 00-22, NOTE: Can use 0a-1f)
 
-Hexadecmal 29: Backpack Texture ID
+Hexadecimal 29: Backpack Texture ID
 
-Hexadecmal 30: Backpack Color ID
+Hexadecimal 30: Backpack Color ID
 
-Hexadecmal 31: Unknown
+Hexadecimal 31-33: Unknown
