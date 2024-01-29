@@ -6,7 +6,7 @@ This API provides a screenshot of your a toon generated from a DNA string.
 
 ## Requests
 
-An HTTP GET to the Field Office API endpoint, https://rendition.toontownrewritten.com/render/{dna}/{render-type}/{width}x{height}.{extension}, will return the generated render.
+An HTTP GET to the rendition endpoint, https://rendition.toontownrewritten.com/render/{dna}/{render-type}/{width}x{height}.{extension}, will return the generated render.
 
 ## Parameters
 
