@@ -12,7 +12,7 @@ An HTTP GET to the rendition endpoint, https://rendition.toontownrewritten.com/r
 
 | Name        | Details |
 |-------------|---------|
-| dna | The DNA string of your toon generated. |
+| dna | The DNA string for the toon to be rendered. |
 | render-type   | Pose your toon makes. At the moment these are the 7 options. (**head, portrait, portait-sleep, portrait-delighted, portrait-surprise, portrait-thinking, portrait-birthday**) |
 | width   | Width of the returned render (ex. **1024**). |
 | height   | Height of the returned render (ex. **1024**). |
