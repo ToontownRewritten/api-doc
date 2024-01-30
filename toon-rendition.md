@@ -6,14 +6,14 @@ This API generates a screenshot of a toon based on a DNA string.
 
 ## Requests
 
-An HTTP GET to the rendition endpoint, https://rendition.toontownrewritten.com/render/{dna}/{render-type}/{width}x{height}.{extension}, will return the generated render.
+An HTTP GET to the rendition endpoint, https://rendition.toontownrewritten.com/render/{dna}/{pose}/{width}x{height}.{extension}, will return the generated render.
 
 ## Parameters
 
 | Name        | Details |
 |-------------|---------|
 | dna | The DNA string for the toon to be rendered. (Use Shift+F11 in-game to copy your toon DNA) |
-| render-type   | Pose your toon makes. At the moment these are the 7 options. (**head, portrait, portait-sleep, portrait-delighted, portrait-surprise, portrait-thinking, portrait-birthday**) |
+| pose   | Pose your toon makes. At the moment these are the 8 options. (**head, laffmeter, portrait, portait-sleep, portrait-delighted, portrait-surprise, portrait-thinking, portrait-birthday**) |
 | width   | Width of the returned render (ex. **1024**). |
 | height   | Height of the returned render (ex. **1024**). |
 | extension   | File extension can be either **png** or **webp** |
