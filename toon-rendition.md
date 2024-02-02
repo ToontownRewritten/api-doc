@@ -58,9 +58,9 @@ Hexadecimal 14: Legs Color: (Between 00-2a, NOTE: No bigger than 29 (ex. 30, 99,
 
 Hexadecimal 15: Head Color: (Between 00-2a, NOTE: No bigger than 29 (ex. 30, 99, 58))
 
-Hexadecimal 16: Unknown (for now)
+Hexadecimal 16: Unknown (Default is 01 on all renders)
 
-Hexadecimal 17: Unknown (for now)
+Hexadecimal 17: DNA Version Byte (After each migration of DNA, this byte has gone up)
 
 Hexadecimal 18: Toggle Deer Red Nose
 
