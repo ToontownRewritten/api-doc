@@ -58,11 +58,11 @@ Hexadecimal 14: Legs Color: (Between 00-2a, NOTE: No bigger than 29 (ex. 30, 99,
 
 Hexadecimal 15: Head Color: (Between 00-2a, NOTE: No bigger than 29 (ex. 30, 99, 58))
 
-Hexadecimal 16: Shoes Item ID
+Hexadecimal 16: Unknown (for now)
 
-Hexadecimal 17: Shoes Texture ID
+Hexadecimal 17: Unknown (for now)
 
-Hexadecimal 18: Shoes Color ID
+Hexadecimal 18: Toggle Deer Red Nose
 
 Hexadecimal 19: Hat Item ID (Between 00-2a, NOTE: No bigger than 41 (ex. 42, 53, 70))
 
@@ -88,4 +88,8 @@ Hexadecimal 29: Backpack Texture ID
 
 Hexadecimal 30: Backpack Color ID
 
-Hexadecimal 31-33: Unknown
+Hexadecimal 31: Shoes Item ID
+
+Hexadecimal 32: Shoes Texture ID
+
+Hexadecimal 33: Shoes Color ID
