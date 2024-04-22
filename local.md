@@ -4,7 +4,13 @@
 
 All requests must be submitted via HTTP GET to `localhost` with a default port of `1547`, this port is incremented if already in use to allow for multitoons (from `1547` through to `1552`).
 
-All requests must have the `Host` header set as `localhost:1547` (or other port as mentioned above), and the `User-Agent` set descriptively. Requests which do not honour these requirements will be aborted by the API server.
+All requests must ensure compliance with the following:
+
+- Must have the `Host` header set as `localhost:1547` (or other port as mentioned above).
+-  Must have the `User-Agent` header set descriptively, this will be shown on the in-game consent prompt.
+-  Must set the `Authorization` header to a random value unique to each session of the application.
+
+Requests which do not honour these requirements will be rejected by the API server.
 
 When possible the API server listens on both `127.0.0.1` and `::1`, with a bias towards IPv6.
 
