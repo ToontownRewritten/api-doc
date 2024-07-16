@@ -58,11 +58,14 @@ This subsequent request will either result in another success=partial with a dif
 success=true
 gameserver=gameserver-alpha.toontownrewritten.com
 cookie=deadbeefdeafbeef0x123
+manifest=/content/patchmanifest.txt
 ```
 ```json
-{"success":"true","gameserver":"gameserver-alpha.toontownrewritten.com","cookie":"deadbeefdeafbeef0x123"}
+{"success":"true","gameserver":"gameserver-alpha.toontownrewritten.com","cookie":"deadbeefdeafbeef0x123","manifest":"/content/patchmanifest.txt"}
 ```
 The user can now login! Set the environment variable TTR_GAMESERVER to the value of the gameserver key, and the environment variable TTR_PLAYCOOKIE to the value of the cookie key, then boot the game.
+
+The manifest should be appended to `https://cdn.toontownrewritten.com` to form the URL for the patch manifest to be used for updating.
 
 ### Queued response
 ```
