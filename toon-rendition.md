@@ -13,7 +13,7 @@ An HTTP GET to the rendition endpoint, https://rendition.toontownrewritten.com/r
 | Name        | Details |
 |-------------|---------|
 | dna | The DNA string for the toon to be rendered. (Use Shift+F11 in-game to copy your toon DNA) |
-| pose   | Pose your toon makes. At the moment these are the 8 options. (**head, laffmeter, portrait, portait-sleep, portrait-delighted, portrait-surprise, portrait-thinking, portrait-birthday**) |
+| pose   | Pose your toon makes. At the moment these are the 8 options. (**head, laffmeter, portrait, portait-sleep, portrait-delighted, portrait-surprise, portrait-thinking, portrait-birthday, portrait-fall, portrait-grin, cake-topper, crying, waving**) |
 | width   | Width of the returned render (ex. **1024**). |
 | height   | Height of the returned render (ex. **1024**). |
 | extension   | File extension can be either **png** or **webp** |
