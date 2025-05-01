@@ -7,8 +7,8 @@ All requests must be submitted via HTTP GET to `localhost` with a default port o
 All requests must ensure compliance with the following:
 
 - Must have the `Host` header set as `localhost:1547` (or other port as mentioned above).
--  Must have the `User-Agent` header set descriptively, this will be shown on the in-game consent prompt.
--  Must set the `Authorization` header to a random value unique to each session of the application.
+- Must have the `User-Agent` header set descriptively, this will be shown on the in-game consent prompt.
+- Must set the `Authorization` header to a random value unique to each session of the application.
 
 Requests which do not honour these requirements will be rejected by the API server.
 
