@@ -104,6 +104,7 @@ When possible the API server listens on both `127.0.0.1` and `::1`, with a bias 
 | from | `npc` object containing the NPC the task was accepted from. |
 | to | `npc` object containing the NPC the task will be turned in to. |
 | reward | Localised reward text for the task or `null` if there is no reward. |
+| type | Localised flavor text describing the task, for example `Just for fun!`. If there is no flavor text, this will be `null`. |
 | deletable | Boolean indicating if the task can be deleted from the Shticker book. |
 
 #### `objective` Values
