@@ -29,6 +29,9 @@ When possible the API server listens on both `127.0.0.1` and `::1`, with a bias 
 | [cogsuits](#get-cogsuitsjson) | Toon Cogsuit details. |
 | [golf](#get-golfjson) | Toon Golf details. |
 | [racing](#get-racingjson) | Toon Racing details. |
+| [beans](#get-beansjson) | Toon Beans details. |
+| [rewards](#get-rewardsjson) | Toon Rewards details. |
+| [cattlelog](#get-cattlelogjson) | Toon Cattlelog details. |
 
 ## GET `/info.json`
 
@@ -243,3 +246,50 @@ When possible the API server listens on both `127.0.0.1` and `::1`, with a bias 
 |------|-------------|
 | name | Localised name of the racing statistic. |
 | num  | Numeric value representing the statistic. |
+
+## GET `/beans.json`
+
+| Name | Description |
+|------|-------------|
+| jar  | `jar` object containing details about the Toon's jellybean jar. |
+| bank | `bank` object containing details about the Toon's jellybean bank. |
+
+### `jar` Values
+
+| Name    | Description |
+|---------|-------------|
+| current | Current amount of jellybeans in the jar. |
+| max     | Maximum amount of jellybeans the jar can hold. |
+
+### `bank` Values
+
+| Name    | Description |
+|---------|-------------|
+| current | Current amount of jellybeans in the bank. |
+| max     | Maximum amount of jellybeans the bank can hold. |
+
+## GET `/rewards.json`
+
+| Name      | Description |
+|-----------|-------------|
+| sos       | Dictionary where keys are SOS toon names and values are their quantity. |
+| unites    | Dictionary where keys are Unite types, for example `Gag-Up`. Values are nested dictionaries where keys are Unite variants, for example `Gag-Up Squirt`, and values are their quantity. |
+| summons   | Dictionary where keys are Cog identifiers and values are `summon` objects. |
+| pinkslips | Current quantity of pink slips. |
+| remotes   | Dictionary where keys are remote types (`Damage Remote`, `Healing Remote`). Values are nested dictionaries, where keys are the levels (`1`, `2`, `3`) and values are their quantity. |
+
+### `summon` Values
+
+| Name     | Description |
+|----------|-------------|
+| name     | Localised name of the Cog summon. |
+| single   | Boolean indicating if a single Cog summon is available. |
+| building | Boolean indicating if a building summon is available. |
+| invasion | Boolean indicating if an invasion summon is available. |
+
+## GET `/cattlelog.json`
+
+| Name   | Description |
+|--------|-------------|
+| series | Current series of the Cattlelog. |
+| issue  | Current issue of the Cattlelog. |
