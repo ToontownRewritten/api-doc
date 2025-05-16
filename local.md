@@ -272,11 +272,23 @@ When possible the API server listens on both `127.0.0.1` and `::1`, with a bias 
 
 | Name      | Description |
 |-----------|-------------|
-| sos       | Dictionary where keys are SOS toon names and values are their quantity. |
-| unites    | Dictionary where keys are Unite types, for example `Gag-Up`. Values are nested dictionaries where keys are Unite variants, for example `Gag-Up Squirt`, and values are their quantity. |
-| summons   | Dictionary where keys are Cog identifiers and values are `summon` objects. |
-| pinkslips | Current quantity of pink slips. |
-| remotes   | Dictionary where keys are remote types (`Damage Remote`, `Healing Remote`). Values are nested dictionaries, where keys are the levels (`1`, `2`, `3`) and values are their quantity. |
+| [sos](#get-sosjson) | Toon SOS cards details.  |
+| [unites](#get-unitesjson) | Toon Unites details. |
+| [summons](#get-summonsjson) | Toon summons details. |
+| [pinkslips](#get-pinkslipsjson) | Toon pinkslips details. |
+| [remotes](#get-remotesjson) | Toon remotes details. |
+
+## GET `/sos.json`
+
+`sos` contains a dictionary where keys are SOS toon names and values are their quantity.
+
+## GET `/unites.json`
+
+`unites` contains a dictionary where keys are Unite types, for example `Gag-Up`. Values are nested dictionaries where keys are Unite variants, for example `Gag-Up Squirt`, and values are their quantity.
+
+## GET `/summons.json`
+
+`summons` contains a dictionary where keys are Cog identifiers and values are `summon` objects.
 
 ### `summon` Values
 
@@ -286,6 +298,14 @@ When possible the API server listens on both `127.0.0.1` and `::1`, with a bias 
 | single   | Boolean indicating if a single Cog summon is available. |
 | building | Boolean indicating if a building summon is available. |
 | invasion | Boolean indicating if an invasion summon is available. |
+
+## GET `/pinkslips.json`
+
+`pinkslips` contains the Toon's current quantity of pink slips.
+
+## GET `/remotes.json`
+
+`remotes` contains a dictionary where keys are remote types (`Damage Remote`, `Healing Remote`). Values are nested dictionaries, where keys are the levels (`1`, `2`, `3`) and values are their quantity.
 
 ## GET `/cattlelog.json`
 
