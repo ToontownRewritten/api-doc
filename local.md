@@ -29,6 +29,9 @@ When possible the API server listens on both `127.0.0.1` and `::1`, with a bias 
 | [cogsuits](#get-cogsuitsjson) | Toon Cogsuit details. |
 | [golf](#get-golfjson) | Toon Golf details. |
 | [racing](#get-racingjson) | Toon Racing details. |
+| [beans](#get-beansjson) | Toon Beans details. |
+| [rewards](#get-rewardsjson) | Toon Rewards details. |
+| [cattlelog](#get-cattlelogjson) | Toon Cattlelog details. |
 
 ## GET `/info.json`
 
@@ -101,6 +104,7 @@ When possible the API server listens on both `127.0.0.1` and `::1`, with a bias 
 | from | `npc` object containing the NPC the task was accepted from. |
 | to | `npc` object containing the NPC the task will be turned in to. |
 | reward | Localised reward text for the task or `null` if there is no reward. |
+| type | Localised flavor text describing the task, for example `Just for fun!`. If there is no flavor text, this will be `null`. |
 | deletable | Boolean indicating if the task can be deleted from the Shticker book. |
 
 #### `objective` Values
@@ -243,3 +247,70 @@ When possible the API server listens on both `127.0.0.1` and `::1`, with a bias 
 |------|-------------|
 | name | Localised name of the racing statistic. |
 | num  | Numeric value representing the statistic. |
+
+## GET `/beans.json`
+
+| Name | Description |
+|------|-------------|
+| jar  | `jar` object containing details about the Toon's jellybean jar. |
+| bank | `bank` object containing details about the Toon's jellybean bank. |
+
+### `jar` Values
+
+| Name    | Description |
+|---------|-------------|
+| current | Current amount of jellybeans in the jar. |
+| max     | Maximum amount of jellybeans the jar can hold. |
+
+### `bank` Values
+
+| Name    | Description |
+|---------|-------------|
+| current | Current amount of jellybeans in the bank. |
+| max     | Maximum amount of jellybeans the bank can hold. |
+
+## GET `/rewards.json`
+
+| Name      | Description |
+|-----------|-------------|
+| [sos](#get-sosjson) | Toon SOS cards details.  |
+| [unites](#get-unitesjson) | Toon Unites details. |
+| [summons](#get-summonsjson) | Toon summons details. |
+| [pinkslips](#get-pinkslipsjson) | Toon pinkslips details. |
+| [remotes](#get-remotesjson) | Toon remotes details. |
+
+## GET `/sos.json`
+
+`sos` contains a dictionary where keys are SOS toon names and values are their quantity.
+
+## GET `/unites.json`
+
+`unites` contains a dictionary where keys are Unite types, for example `Gag-Up`. Values are nested dictionaries where keys are Unite variants, for example `Gag-Up Squirt`, and values are their quantity.
+
+## GET `/summons.json`
+
+`summons` contains a dictionary where keys are Cog identifiers and values are `summon` objects.
+
+### `summon` Values
+
+| Name     | Description |
+|----------|-------------|
+| name     | Localised name of the Cog summon. |
+| single   | Boolean indicating if a single Cog summon is available. |
+| building | Boolean indicating if a building summon is available. |
+| invasion | Boolean indicating if an invasion summon is available. |
+
+## GET `/pinkslips.json`
+
+`pinkslips` contains the Toon's current quantity of pink slips.
+
+## GET `/remotes.json`
+
+`remotes` contains a dictionary where keys are remote types (`Damage Remote`, `Healing Remote`). Values are nested dictionaries, where keys are the levels (`1`, `2`, `3`) and values are their quantity.
+
+## GET `/cattlelog.json`
+
+| Name   | Description |
+|--------|-------------|
+| series | Current series of the Cattlelog. |
+| issue  | Current issue of the Cattlelog. |
