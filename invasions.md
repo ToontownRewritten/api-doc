@@ -24,4 +24,4 @@ An HTTP GET to the invasions API endpoint, https://www.toontownrewritten.com/api
 |------|---------|
 | type | The name of the invading cog. The localized name will always be in English, and will always be the singular form of the cog. If the cog is a skelecog, ` (Skelecog)` will be appended. If the cog is version 2.0, `Version 2.0 ` will be prepended. |
 | asOf | The epoch timestamp of when the district last reported its invasion status. |
-| progress | A string, of the form `%d/%d`, where the first number represents the number of cogs already despawned during the invasion and the second number represents the total size of the invasion. |
+| progress | A string, of the form `%d/%d`, where the first number represents the number of cogs already despawned during the invasion and the second number represents the total size of the invasion. Mega-Invasions will have a string of form `0/1000000`. |
