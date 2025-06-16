@@ -48,6 +48,7 @@ When possible the API server listens on both `127.0.0.1` and `::1`, with a bias 
 
 | Name | Description |
 |------|-------------|
+| id | Toon identifier, for example `TTID-ABCD-EFGH`. |
 | name | Toon name. |
 | species | Toon species name. |
 | headColor | Toon head color in hex format. |
