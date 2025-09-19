@@ -32,6 +32,7 @@ When possible the API server listens on both `127.0.0.1` and `::1`, with a bias 
 | [beans](#get-beansjson) | Toon Beans details. |
 | [rewards](#get-rewardsjson) | Toon Rewards details. |
 | [cattlelog](#get-cattlelogjson) | Toon Cattlelog details. |
+| [tokens](#get-tokensjson) | Toon Cartoonival Token details. |
 
 ## GET `/info.json`
 
@@ -314,3 +315,7 @@ When possible the API server listens on both `127.0.0.1` and `::1`, with a bias 
 |--------|-------------|
 | series | Current series of the Cattlelog. |
 | issue  | Current issue of the Cattlelog. |
+
+## GET `/tokens.json`
+
+`tokens` contains the Toon's current quantity of Cartoonival Tokens.
